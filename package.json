@@ -61,14 +61,16 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "pullLooknFeel": "cd src/looknfeel-core && git pull",
-    "postpullLooknFeel": "cd src/looknfeel-fitflop && git pull",
-    "pullApp": "cd src/ngs-order-placement && git pull",
-    "pull": "npm run pullLooknFeel && npm run pullApp",
+
+    "pull": "cd src/looknfeel-core && git pull",
+    "postpull": "cd src/looknfeel-fitflop && git pull",
+
     "symlink-core": "cd src/looknfeel-fitflop/grails-app/assets/scss && ln -s ../../../../looknfeel-core/grails-app/assets/scss/_looknfeel-core.scss _looknfeel-core.scss",
-    "precreate": "cd src && git clone git@bitbucket.org:tacitknowledge/looknfeel-fitflop.git && git clone git@bitbucket.org:tacitknowledge/looknfeel-core.git",
-    "create": "cd src && git clone git@bitbucket.org:tacitknowledge/ngs-order-placement.git",
-    "postcreate": "npm run symlink-core"
+    "create": "cd src && git clone git@bitbucket.org:tacitknowledge/looknfeel-fitflop.git && git clone git@bitbucket.org:tacitknowledge/looknfeel-core.git",
+    "postcreate": "npm run symlink-core",
+
+    "pullCheckout": "cd src/ngs-order-placement && git pull",
+    "createCheckout": "cd src && git clone git@bitbucket.org:tacitknowledge/ngs-order-placement.git"
   },
   "jest": {
     "collectCoverageFrom": [
