@@ -61,14 +61,10 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-
-    // pull latest code 'npm run pull'
     "pullLooknFeel": "cd src/looknfeel-core && git pull",
     "postpullLooknFeel": "cd src/looknfeel-fitflop && git pull",
     "pullApp": "cd src/ngs-order-placement && git pull",
     "pull": "npm run pullLooknFeel && npm run pullApp",
-
-    // run this only once on a fresh clone 'npm run create'
     "symlink-core": "cd src/looknfeel-fitflop/grails-app/assets/scss && ln -s ../../../../looknfeel-core/grails-app/assets/scss/_looknfeel-core.scss _looknfeel-core.scss",
     "precreate": "cd src && git clone git@bitbucket.org:tacitknowledge/looknfeel-fitflop.git && git clone git@bitbucket.org:tacitknowledge/looknfeel-core.git",
     "create": "cd src && git clone git@bitbucket.org:tacitknowledge/ngs-order-placement.git",
