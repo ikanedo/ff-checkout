@@ -1,3 +1,7 @@
 {
-  "checkout.checkout": "Checkout App"
+  "checkout.checkout": "Checkout App",
+  "checkout.customer.title": "Returning Customers",
+  "checkout.customer.description": "Save time using your details",
+  "checkout.guest.title": "Guest Checkout",
+  "checkout.guest.description": "You'll have a change to create an account later"
 }
